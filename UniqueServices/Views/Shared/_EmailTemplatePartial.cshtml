@@ -1,0 +1,32 @@
+﻿@model EmailMessageViewModel
+
+<form asp-controller="Home" asp-action="SendEmail" method="post">
+    <input type="hidden" asp-for="RedirectUrl" />
+    <div class="mb-3">
+        <label for="inputFirstName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputFirstName" asp-for="Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label for="inputPhone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="inputPhone" asp-for="Phone">
+        <span class="text-danger" asp-validation-for="Phone"></span>
+    </div>
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" asp-for="EmailAddress">
+        <span class="text-danger" asp-validation-for="EmailAddress"></span>
+    </div>
+    <div class="mb-3">
+        <label for="inputService" class="form-label">Select a Service</label>
+        <select class="form-select" aria-label="Select a Service" id="inputService" asp-for="Selection">
+            <option selected>Select a Service</option>
+            <option value="1">Air Conditioning</option>
+            <option value="2">Heating</option>
+            <option value="3">Plumbing</option>
+            <option value="4">Electrical</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Selection"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
