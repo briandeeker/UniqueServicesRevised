@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using System.Net.Http;
-using Microsoft.AspNetCore.Components;
+﻿using UniqueServices.Services.Configuration;
+using UniqueServices.IoC;
 
 namespace Template
 {
@@ -24,6 +15,8 @@ namespace Template
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<EmailServerOptions>(Configuration.GetSection("Smtp"));
+            services.AddTemplateServices();
             services.AddControllersWithViews();
 
             // Allows the use of UseMvc routing below replaces app.UseEndpoints(endpoints => {} )

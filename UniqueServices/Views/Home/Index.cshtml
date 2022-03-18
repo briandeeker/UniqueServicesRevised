@@ -1,4 +1,4 @@
-﻿
+﻿@model EmailMessageViewModel
 
 @{
     ViewData["Title"] = "HVAC &amp; Plumbing Services in Bradenton, FL | Unique Services Florida - ";
@@ -16,35 +16,7 @@
                 <h2>SCHEDULE SERVICE NOW</h2>
             </div>
             <div class="col-lg-6">
-                <form class="row needs-validation" novalidate>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="text" class="form-control" id="inputFirstName"  placeholder="Name">
-                        </div>
-                        <div class="col">
-                            <input type="tel" class="form-control" id="inputPhone"  placeholder="Phone Number">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="email" class="form-control" id="inputEmail"  placeholder="Email" aria-label="Email">
-                        </div>
-                        <div class="col">
-                            <select class="form-select" aria-label="Select a Service" id="inputService" >
-                                <option selected>Select a Service</option>
-                                <option value="1">Air Conditioning</option>
-                                <option value="2">Heating</option>
-                                <option value="3">Plumbing</option>
-                                <option value="4">Electrical</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <button class="btn btn-warning float-end" type="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                @await Html.PartialAsync("~/Views/Shared/_EmailTemplatePartial.cshtml", Model)
             </div>
         </div>
         </div>        
