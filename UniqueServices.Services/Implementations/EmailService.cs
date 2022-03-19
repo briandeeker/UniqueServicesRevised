@@ -63,7 +63,7 @@ namespace UniqueServices.Services.Implementations
             var message = new MimeMessage();
             message.From.Add(MailboxAddress.Parse(_options.EmailUsername));
             message.To.Add(MailboxAddress.Parse(_options.EmailUsername));
-            message.Subject = "EmailPages - message from: " + emailMessage.Name;
+            message.Subject = "Unique Services Contact Form - message from: " + emailMessage.Name;
             message.Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = stringBuilder.ToString() };
 
             return message;

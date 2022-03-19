@@ -96,6 +96,15 @@ namespace UniqueServices.Controllers
         {
             return View();
         }
+        public IActionResult Careers()
+        {
+            return View();
+        }
+        public IActionResult StJude()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> SendEmail(EmailMessageViewModel vm)

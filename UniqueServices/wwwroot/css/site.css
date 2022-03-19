@@ -254,18 +254,18 @@ hr {
     list-style-image: url('yellow-tick.png');
 }
 
-    .tick-image li {
-        padding: 0 0 8px 5px;
-    }
+.tick-image li {
+    padding: 0 0 8px 5px;
+}
 
 .ul-spaced {
     margin: 30px 0 30px 0;
     list-style-image: url('arrow.png');
 }
 
-    .ul-spaced li {
-        padding: 10px 0 10px 5px;
-    }
+.ul-spaced li {
+    padding: 10px 0 10px 5px;
+}
 
 .ul-nested {
     margin: 5px 0 5px 0;
@@ -276,9 +276,9 @@ hr {
     background-color: #6e3322;
 }
 
-    .card-header h5 {
-        color: #fff;
-    }
+.card-header h5 {
+    color: #fff;
+}
 
 .video-blog {
     width: 100%;
@@ -287,14 +287,14 @@ hr {
     position: relative;
 }
 
-    .video-blog iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-    }
+.video-blog iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
 
 .silver {
     background-color: red;
@@ -304,9 +304,13 @@ hr {
     background-color: #6e3322;
 }
 
-    .callout-row td {
-        color: #fff;
-    }
+.callout-row td {
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
 /* Mobile */
 @media screen and (max-width: 600px) {
     .navbar-dark .nav-item {

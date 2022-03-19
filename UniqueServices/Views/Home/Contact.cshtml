@@ -1,8 +1,107 @@
-﻿
+﻿@model EmailMessageViewModel
+
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Schedule An HVAC Service in Bradenton | Unique Services Florida - ";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["MetaDescription"] = "Protect your investment, schedule home service from West Florida&#039;s experts at Unique Services. We provide HVAC, plumbing, electrical, and more.";
 }
 
-<h1>Contact</h1>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-10">
+            <h1 class="h1-internal mt-5">Contact Unique Services Florida</h1>
+            <hr class="hr-internal" />
+            <h2 class="h2-internal mt-5">For faster service call us at <a href="tel:9413770153" class="services-details">941-377-0153</a></h2>
+            <hr class="hr-internal" />
+
+            <h2 class="h2-internal mt-5">RELIABLE HVAC SERVICES IN BRADENTON AND FT. MYERS</h2>
+            <hr class="hr-internal" />
+            <p>If you’re a resident of Bradenton, Ft Myers, or the surrounding areas in West Florida and need plumbing, electrical, swimming pool, or HVAC services, Unique Services Florida is here to help! As the home service experts of West Florida, you can count on us to deliver solutions that go above and beyond the competition. With more than 60 years of experience under our belts, we have what it takes to get the job done right the first time! When you need quick and efficient services, we’re the team for the job. Our number one goal is to provide the best customer experience, so let us show you why Floridians far and wide have relied on us for over six decades. Should you have any questions or concerns, feel free to contact us by filling out the form below or giving us a call at <a href="tel:9413770153" class="services-details">941-377-0153</a>.</p>
+
+            <div class="row mb-5">
+                <div class="col-lg-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputMail" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-label="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputService" class="form-label">Service</label>
+                            <select class="form-select" aria-label="Select a Service" id="inputService" >
+                                <option selected>Select a Service</option>
+                                <option value="1">Air Conditioning</option>
+                                <option value="2">Heating</option>
+                                <option value="3">Plumbing</option>
+                                <option value="4">Electrical</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <h2 class="h2-internal mt-5">OUR HOME SERVICES</h2>
+            <hr class="hr-internal" />
+            <p>At Unique Services Florida, we work around the clock to ensure Bradenton, FL, and the surrounding areas have comprehensive HVAC services when they need them the most. Our services include:</p>
+
+            <ul class="ul-spaced">
+                <li>AC & Heating</li>
+                <li>Plumbing</li>
+                <li>Electrical</li>
+                <li>Air Duct Cleaning</li>
+                <li>Indoor Air Quality</li>
+            </ul>
+
+            <h2 class="h2-internal mt-5">WHAT SETS US APART</h2>
+            <hr class="hr-internal" />
+            <p>When you’re looking for unrivaled customer care and HVAC services all at once, we’re the team to call! If our Sarasota Chamber Customer Excellence Award and Lennox Customer Satisfaction Award weren’t enough to convince you, let us prove it! We not only provide our customers with comprehensive service plans, but we also offer a host of energy-saving specials that you and your wallet will love! Should you have any questions or concerns, feel free to contact us by filling out the form below or giving us a call at <a href="tel:9413770153" class="services-details">941-377-0153</a>. Are you wondering if we service your particular area? Give us a call, and we'd be happy to answer any questions you may have.</p>
+            <h2 class="h2-internal mt-5">WE PROUDLY SERVICE THE FOLLOWING AREAS:</h2>
+            <hr class="hr-internal" />
+
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <ul class="tick-image">
+                        <li>Sarasota</li>
+                        <li>Bradenton</li>
+                        <li>Tampa</li>
+                        <li>Venice</li>
+                        <li>Brandon</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="tick-image">
+                        <li>Ft. Myers</li>
+                        <li>Naples</li>
+                        <li>Port Charlotte</li>
+                        <li>Bonita Springs</li>
+                        <li>Cape Coral</li>                        
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="tick-image">
+                        <li>Captive</li>
+                        <li>Sanibel</li>
+                        <li>Estero</li>
+                        <li>Other Surrounding Areas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="h2-internal mt-5">Unique Services</h2>
+            <hr class="hr-internal" />
+            <p class="mb-5">4515 19th Street Court East<br />Bradenton, FL 34203</p>
+        </div>
+    </div>
+</div>
+    
+
 
