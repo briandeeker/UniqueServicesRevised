@@ -33,7 +33,7 @@
                         <a class="btn btn-warning btn-lg" role="button" href="tel:9413770153">941.377.0153</a>   
                     </li>
                 </ul>
-                <ul class="navbar-nav flex-grow-1">
+                <ul class="navbar-nav flex-grow-1 nav-mobile">
                     <li class="nav-right"><a class="nav-right-a" asp-area="" asp-controller="Home" asp-action="AboutUs">About</a></li>
                     <li class="nav-right"><a class="nav-right-a" asp-area="" asp-controller="Home" asp-action="Careers">Careers</a></li>
                     <li class="nav-right"><a class="nav-right-a" asp-area="" asp-controller="Home" asp-action="StJude">St Jude</a></li>
@@ -64,6 +64,8 @@
                                 <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AirDuctCleaning">Air Duct Cleaning</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="IndoorAirQuality">Indoor Air Quality</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Nest">Nest Thermostats</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -100,15 +102,9 @@
             </li>
             <li class="nav-item hide-mobile">
                 <span style="font-size: 6px; color: #fff; position: absolute; bottom: 34px;"><i class="fa-solid fa-circle"></i></span>
-            </li>@*
-            <li class="nav-item">
-                AVAILABLE 24/7   
             </li>
             <li class="nav-item">
-                <span style="font-size: 6px; color: #fff; position: absolute; bottom: 38px;"><i class="fa-solid fa-circle"></i></span>
-            </li>*@
-            <li class="nav-item">
-                941.377.0153   
+                <a href="tel:9413770153" class="footer-telephone">941-377-0153</a>   
             </li>
         </ul>
     </div>
@@ -137,12 +133,12 @@
                     <h4>Quick Links</h4>
                     <hr class="footer-hr" />
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="AirConditioning">Air Conditioning</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="Heating">Heating</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="AirConditioning">Air Conditioning</a></li>                        
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="Plumbing">Plumbing</a></li>
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="Electrical">Electrical</a></li>
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="Offers">Offers</a></li>
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="ProsClub">Pros Club</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" asp-area="" asp-controller="Home" asp-action="LeaveReview">Leave a Review</a></li>
                     </ul>
                 </div>
 
@@ -191,7 +187,7 @@
 
 <div class="copyright footer-bottom py-4">
 	<div class="container py-2">
-		<p class="mb-0 text-muted small">© @DateTime.Now.Year UNIQUE SERVICES, LLC. CMC1250555 HVAC  •  EC13002942 ELECTRICAL  •  CFC1429592 PLUMBING</p>
+		<p class="mb-0 text-muted small">© @DateTime.Now.Year UNIQUE SERVICES, LLC. CMC1250555 HVAC  <span class="footer-space">•</span>  EC13002942 ELECTRICAL  <span class="footer-space">•</span>  CFC1429592 PLUMBING<span class="footer-space">•</span> <a href="https://www.ars.com/privacy-policy" class="footer-dark" target="_blank">Privacy</a></p>
 	</div>
 </div>
 

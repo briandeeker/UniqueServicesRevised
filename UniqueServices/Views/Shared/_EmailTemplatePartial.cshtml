@@ -3,7 +3,7 @@
 <form class="row needs-validation" novalidate asp-controller="Home" asp-action="SendEmail" method="post">
     <input type="hidden" asp-for="RedirectUrl" />
     <div class="row mb-3">
-        <div class="col">
+        <div class="col-lg-6 col-sm-12">
             <input type="text" class="form-control" id="inputFirstName" placeholder="Name" asp-for="Name">
         </div>
         <div class="col">
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col">
+        <div class="col-lg-6 col-sm-12">
             <input type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Email" asp-for="EmailAddress">
         </div>
         <div class="col">

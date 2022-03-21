@@ -87,6 +87,10 @@ namespace Template
                 routes.MapRoute(name: "ScheduleService", template: "schedule-service", defaults: new { controller = "Home", action = "ScheduleService" });
                 routes.MapRoute(name: "Careers", template: "careers", defaults: new { controller = "Home", action = "Careers" });
                 routes.MapRoute(name: "StJude", template: "stjude", defaults: new { controller = "Home", action = "StJude" });
+                routes.MapRoute(name: "Heating", template: "heating", defaults: new { controller = "Home", action = "Heating" });
+                routes.MapRoute(name: "Nest", template: "nest", defaults: new { controller = "Home", action = "Nest" });
+                routes.MapRoute(name: "Electrical", template: "electrical", defaults: new { controller = "Home", action = "Electrical" });
+                routes.MapRoute(name: "LeaveReview", template: "leave-a-review", defaults: new { controller = "Home", action = "LeaveReview" });
 
 
                 routes.MapRoute(

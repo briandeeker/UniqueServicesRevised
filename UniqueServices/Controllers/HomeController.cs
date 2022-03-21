@@ -104,6 +104,14 @@ namespace UniqueServices.Controllers
         {
             return View();
         }
+        public IActionResult Nest()
+        {
+            return View();
+        }
+        public IActionResult LeaveReview()
+        {
+            return View();
+        }
 
 
         [HttpPost]

@@ -227,6 +227,20 @@ hr {
     height: 270px;
 }
 
+.footer-telephone {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-dark {
+    text-decoration: none;
+    color: #999;
+}
+
+.footer-space {
+    margin: 0 15px 0 15px
+}
+
 /* Internal pages*/
 .h1-internal {
     text-transform: uppercase;
@@ -316,16 +330,45 @@ h3 {
     .navbar-dark .nav-item {
         margin: 10px;
     }
-
     .footer-yellow .nav-item {
         margin: 10px;
     }
-
     .ms-5 {
         margin: 0 !important;
     }
-
     .hide-mobile {
         display: none;
+    }
+    .nav-mobile {
+        flex-direction: row;
+    }
+    .btn-warning {
+        margin-top: 20px;
+    }
+    .navbar-dark ul {
+        margin: 0;
+    }
+    .hero-text {
+        top: 45%;
+        width: 90%;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+        margin-bottom: 20px
+    }
+    #schedule-service {
+        top: 110px;
+    }
+    #inputFirstName {
+        margin-bottom: 15px;
+    }
+    #inputEmail {
+        margin-bottom: 15px;
+    }
+    #carouselExampleControls {
+        height: 300px;
+    }
+    .card {
+        margin-bottom: 30px;
     }
 }
